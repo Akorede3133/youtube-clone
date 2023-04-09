@@ -1,0 +1,50 @@
+.videodetail__container {
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+}
+.videodetail__player {
+}
+.player {
+    position: relative;
+    padding-top: 56.25%;
+    height: 300px;
+    overflow: hidden;
+}
+.videodetail__react__player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+}
+.videodetail__title {
+}
+.videodetail__title h2 {
+    color: gray;
+}
+.videodetail__videos {
+    display: grid;
+    gap: 2rem;   
+    margin-top: 50px;
+}
+@media (min-width: 768px) {
+    .videodetail__container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+    .videodetail__react__player {
+        position: ;
+        top: 0;
+        left: 0;
+        height: 350px;
+    }
+    .videodetail__videos {
+        margin-top: 0;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
+    .channeldetails__banner {
+        width: 50%;
+    }
+}

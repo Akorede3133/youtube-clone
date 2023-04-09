@@ -1,0 +1,31 @@
+.channelcard__details {
+    display: flex;
+    margin-top: .9rem;
+    gap: 1rem;
+}
+.channelcard__img  {
+    width: 100%;
+}
+.channelcard__img > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+.channelcard__info {
+    display: grid;
+    gap: .2rem;
+}
+.channelcard__title__container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.channelcard__check {
+    color: gray;
+}
+@media (min-width: 768px) {
+    .channelcard__img > img {
+        height: 230px;
+    }
+}

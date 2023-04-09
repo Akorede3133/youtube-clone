@@ -1,0 +1,37 @@
+.videocard__details {
+    display: flex;
+    margin-top: .9rem;
+    gap: 1rem;
+}
+.videocard__img  {
+    width: 100%;
+}
+.videocard__img > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+.videocard__mini__image > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.videocard__views__info {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.videocard__info {
+    display: grid;
+    gap: .2rem;
+}
+.videocard__dot {
+    font-size: 1.5rem;
+    margin-top: -10px;
+}
+@media (min-width: 768px) {
+    .videocard__img > img {
+        height: 230px;
+    }
+}

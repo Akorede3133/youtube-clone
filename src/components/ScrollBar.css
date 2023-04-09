@@ -1,0 +1,60 @@
+.scrollbar__container {
+    width: 100%;
+    position: relative;
+}
+.scrollbar__categories {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    gap: 10px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.scrollbar__categories.dragging {
+    scroll-behavior: auto;
+}
+.icon {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: linear-gradient(to right, #fff, #fffffffa);
+    background-color: ;
+}
+
+.arrow:hover {
+    background-color: rgba(128, 128, 128, 0.479);
+    border-radius: 50%;
+}
+.icon:first-child {
+    display: none;
+}
+.arrow {
+    cursor: pointer;
+    color: gray;
+}
+.icon:last-child {
+    right: 0;
+}
+.scrollbar__categories li {
+    background-color: rgba(128, 128, 128, 0.13);
+    padding: 7px 15px;
+    white-space: nowrap;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.795);
+}
+li:hover {
+    background-color: rgba(128, 128, 128, 0.534);
+    color: black;
+}
+li.active {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,12 @@
+.searchfield__container {
+    width: 90%;
+    margin: 2.5rem auto;
+    display: grid;
+    gap: 3rem;
+}
+@media (min-width: 768px) {
+    .searchfield__container {
+        gap: 2.5rem 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+}

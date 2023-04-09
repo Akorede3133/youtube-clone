@@ -1,0 +1,53 @@
+.channeldetails__img > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.channeldetails__banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    align-self: center;
+}
+.channeldetails__container {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+.channeldetails__title__container {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.channelcard__check {
+    font-size: 2px;
+}
+.channeldetals__customUrl {
+    font-size: .9rem;
+    font-weight: 600;
+    color: gray;
+}
+.channeldetails__subscribers {
+    font-size: .9rem;
+    color: gray;
+}
+.channelcard__desc {
+    margin-top: 20px;
+}
+.channeldetails__videos {
+    display: grid;
+    gap: 2rem;   
+    margin-top: 100px;
+}
+@media (min-width: 768px) {
+    .channeldetails__videos {
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
+    .channeldetails__banner {
+        width: 50%;
+    }
+}
